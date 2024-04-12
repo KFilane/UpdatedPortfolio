@@ -1,80 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-
-.header{
+.header {
     position: fixed;
     top: 0%;
     left: 0%;
-    width:100%;
+    width: 100%;
     padding: 20px 10px;
-    background: tr;
+    background: green; /* Changed from tr */
     display: flex;
-    justify-content :safe;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: aqua;
     text-decoration: none;
     font-weight: 700;
 }
-.navbar{
-    font-size: 18px;
-    color: aliceblue;
+
+.nav a {
+    font-size: 25px;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
 }
-.navbar a:hover,
-.navbar a:active{
-color: blue;
+
+.nav a:hover,
+.nav a:active {
+    color: blue;
 }
 
-.home{
+.home {
     height: 100vh;
-    background: linear-gradient(-90deg,black 65%,white 35%);
+    background: linear-gradient(-90deg, black 65%, white 35%);
     display: flex;
     align-items: center;
 }
 
-home.image{
-width: 500px;
-height: 500px;
-background: seagreen;
+.home-image {
+    width: 500px;
+    height: 500px;
+    background: seagreen;
 }
-.home-content{
+
+.home-content {
     max-width: 600px;
     color: white;
     text-align: right;
 }
-.home-content h1{
+
+.home-content h1 {
     font-size: 55px;
     line-height: 1.2;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 40px;
     color: blueviolet;
     -webkit-text-stroke: .5px white;
 }
-.home-content p{
+
+.home-content p {
     font-size: 16px;
     margin-top: 20px;
 }
-.home-sci{
+
+.home-sci a{
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     background: transparent;
     border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    margin-top: 20px;
+    text-decoration: none;
+    
+}
+
+.home-sci a:hover{
+    background: blue;
+    color: #fff;
 }
