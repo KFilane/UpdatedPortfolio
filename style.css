@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+body {
+  /* Add background properties */
+  background-image: url('software-developer-6521720_640.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse; /* Main circle on the right */
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.main-circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc; /* Fallback color */
+}
+
+.main-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-section {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc; /* Fallback color */
+  margin-right: 30px;
+  transition: transform 0.5s ease;
+}
+
+.circle.resume {
+  background-color: #ff9999; /* Change color for Resume circle */
+}
+
+.circle.work {
+  background-color: #99ccff; /* Change color for My Work circle */
+}
+
+.circle.skills {
+  background-color: #99ff99; /* Change color for My Skills circle */
+}
+
+.circle p {
+  margin: 0;
+}
+
+.paragraph {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.circle.bounce {
+  animation: bounce 0.5s infinite alternate;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the RGBA values to change the overlay color and opacity */
+}
+
+.work-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  margin-bottom: 20px;
+  top: 100vh;
+}
+
+.project h3 {
+  margin-bottom: 5px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details h2 {
+  font-size: 18px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
