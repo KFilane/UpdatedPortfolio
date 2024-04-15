@@ -13,7 +13,7 @@
     left: 0%;
     width: 100%;
     padding: 20px 10px;
-    background: green; /* Changed from tr */
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +27,9 @@
     font-weight: 700;
 }
 
-.nav a {
-    font-size: 25px;
-    color: black;
+.navbar a {
+    font-size: 18px;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -63,6 +63,7 @@
 .home-content h1 {
     font-size: 55px;
     line-height: 1.2;
+    text-align: left;
 }
 
 .home-content h3 {
@@ -96,3 +97,117 @@
     background: blue;
     color: #fff;
 }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.navbar a:hover {
+    background-color: #c42929;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-image {
+    position: relative;
+    width: 500px; /* Adjust this value as needed */
+    height: 500px; /* Adjust this value as needed */
+    border-radius: 50%; /* Makes the image container circular */
+    overflow: hidden; /* Ensures the inner circle is contained within the circle */
+    margin-left: 200px;
+}
+
+
+
+.home-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensures the image fills the circular container */
+    height: auto; /* Maintains aspect ratio */
+    z-index: 2; /* Ensures the image is on top of the inner circle */
+}
+
+
+
+
+
+.home-content {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px; /* Adjust this value as needed */
+    margin-left: 100px;
+}
+
+.home-content h1 {
+    margin-top: 0;
+}
+
+.home-content p {
+    margin-bottom: 20px;
+}
+
+.home-sci {
+    margin-top: 20px;
+}
+
+.home-sci a {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Add this CSS to your styles.css file */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
