@@ -201,13 +201,91 @@ body {
     background-color: #45a049; /* Darker Green */
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.section{
+    padding-block: 5em;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col {
+    width: 28%; /* Adjust the width as needed */
+    border-radius: 5px solid black;
+    padding: 10px;
+    margin: 30px 20px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+   
+   
 }
 
 
 
+.about-info {
+    text-align: center;
+}
 
+.about-info figure {
+    margin-bottom: 20px;
+}
+
+.about-info img {
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%; /* Make the image round */
+}
+
+/* Style for the skill boxes */
+.skill-box {
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill-per {
+    background-color: #6cb2eb;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.skill-box:hover .tooltip {
+    opacity: 1;
+}
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: aliceblue;
+}
