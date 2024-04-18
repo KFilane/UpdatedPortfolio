@@ -48,7 +48,7 @@
                         <h2>Web developer</h2>
                         <p>I am a certified Microsoft Technology Associate. I am well versed in multiple disciplines of information technology systems, with a special interest in design and development.</p>
                     </figure>
-                    <a href="Your_CV.docx" class="btn" download>Download CV</a><br><br> <!-- Updated CV file name -->
+                    <a href="Personal Notes Week 1.docx" class="btn" download>Download CV</a><br><br> <!-- Updated CV file name -->
                     <a href="#" class="btn">Hire Me</a> <!-- Placeholder "#" for href -->
                 </div>
             </div>
@@ -119,38 +119,26 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My<span>Services</span></h1>
-                <div class="services-list">
-                
-                </div>
-                <i class="bx bx-code" style="color: #00ccff;"></i>
-                <h2>UI/UX Design</h2>
-                <p></p>
-                <a href="#" class="read">learn more</a>
-            </div>
+
+    <div class="section-container">
+        <div class="section">
+            <h2>UI/UX Developer</h2>
+            <!-- Content for section 1 -->
         </div>
-        <i class="bx bx-code" style="color: #00ccff;"></i>
-        <h2>UI/UX Design</h2>
-        <p></p>
-        <a href="#" class="read">learn more</a>
+        <div class="section">
+            <h2>Section 2</h2>
+            <!-- Content for section 2 -->
+        </div>
+        <div class="section">
+            <h2>Section 3</h2>
+            <!-- Content for section 3 -->
+        </div>
+        <div class="section">
+            <h2>Section 4</h2>
+            <!-- Content for section 4 -->
+        </div>
     </div>
-</div>
-<i class="bx bx-code" style="color: #00ccff;"></i>
-<h2>UI/UX Design</h2>
-<p></p>
-<a href="#" class="read">learn more</a>
-</div>
-</div>
-<i class="bx bx-code" style="color: #00ccff;"></i>
-<h2>UI/UX Design</h2>
-<p></p>
-<a href="#" class="read">learn more</a>
-</div>
-        </div>
-    </section>
+    
     <section class="section" id="projects">
         <div class="top-header">
             <h1>Projects</h1>
@@ -173,6 +161,33 @@
             </div>
         </div>
     </section>
+
+
+    <h1>Contact</h1>
+    <div class="container">
+       
+        <h2>Get in touch with me!</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message" class="hidden">Message sent successfully!</div>
+    </div>
+
+
+
+    <script src="script.js"></script>
     <footer>
         <div class="footer">
             <p>Contact Information:</p>
@@ -188,5 +203,6 @@
             this.style.backgroundColor = '#ffcc00';
         });
     </script>
+    
 </body>
 </html>

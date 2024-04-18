@@ -58,3 +58,31 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    // Simple email validation
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+
+    // Check if all fields are filled
+    if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    // If validation passes, you can proceed with form submission
+    // For now, let's just show a success message
+    document.getElementById('contact-form').reset();
+    document.getElementById('success-message').classList.remove('hidden');
+});
+
+
