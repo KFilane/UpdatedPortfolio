@@ -237,39 +237,11 @@ body {
 }
 
 /* Style for the skill boxes */
-.skill-box {
-    width: calc(50% - 10px); /* Adjust the width as needed */
-    margin-bottom: 20px;
+
+.skills a i {
+    font-size: 107px; /* Adjust the font size as desired */
 }
 
-.skill-bar {
-    background-color: #f0f0f0;
-    height: 10px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.skill-per {
-    background-color: #6cb2eb;
-    height: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.tooltip {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
 
 .skill-box:hover .tooltip {
     opacity: 1;
@@ -346,3 +318,56 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+#services{
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 74px;
+
+}
+.sub-title span{
+    color: #4CAF50;
+}
+.container{
+    padding: 90px;
+}
+
+.service-list{
+
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+box-shadow: 1px 1px 20px #007bff,
+1px 1px 40px blue;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+} 
