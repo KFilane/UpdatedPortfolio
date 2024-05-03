@@ -34,6 +34,8 @@
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+   
+    animation: slidetop .5s ease forwards;
 }
 
 .nav a:hover,
@@ -348,8 +350,8 @@ button:hover {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bx {
