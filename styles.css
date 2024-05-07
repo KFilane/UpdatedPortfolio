@@ -34,8 +34,9 @@
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    margin-top: 10px;
    
-    animation: slidetop .5s ease forwards;
+   
 }
 
 .nav a:hover,
@@ -214,7 +215,7 @@ body {
 }
 
 .col {
-    width: 28%; /* Adjust the width as needed */
+    width: 30%; /* Adjust the width as needed */
     border-radius: 5px solid black;
     padding: 10px;
     margin: 30px 20px;
@@ -241,13 +242,9 @@ body {
 /* Style for the skill boxes */
 
 .skills a i {
-    font-size: 107px; /* Adjust the font size as desired */
+    font-size: 105px; /* Adjust the font size as desired */
 }
 
-
-.skill-box:hover .tooltip {
-    opacity: 1;
-}
 
 
 
@@ -270,56 +267,7 @@ body {
     margin-top: 0;
 }
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.hidden {
-    display: none;
-}
-
-#success-message {
-    margin-top: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 
 .services {
@@ -367,26 +315,179 @@ h3 {
 p {
     font-size: 16px;
 }
-.portfolio{
-    background: #007bff;
-}
-.portfolio h2{
-    margin-bottom: 4rem;
-}
-.portfolio-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.portfolio-container .portfolio-box{
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: #007bff;
-    overflow: hidden;
-    display: flex;
+
+.portfolio {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-.portfolio-box img{
-    width: 100%;
+.portfolio .heading {
+    font-size: 36px;
+    margin-bottom: 30px;
 }
+
+.portfolio .heading span {
+    color: #3498db;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.portfolio-box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(52, 152, 219, 0.8);
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.portfolio-layer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.portfolio-layer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.portfolio-layer a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    text-align: center; /* Center-align the content */
+}
+
+.footer-content {
+    display: inline-block; /* Make the content block-level to center it */
+    text-align: left; /* Reset text alignment for inner content */
+    max-width: 600px; /* Adjust the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.social-icons {
+    margin-bottom: 20px; /* Add some space between social icons and contact info */
+}
+
+.social-icon {
+    color: #050505;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #070707;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
