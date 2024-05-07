@@ -9,7 +9,7 @@
 
 .header {
     position: fixed;
-    top: 0%;
+    top: 15%;
     left: 0%;
     width: 100%;
     padding: 20px 10px;
@@ -39,10 +39,6 @@
    
 }
 
-.nav a:hover,
-.nav a:active {
-    color: blue;
-}
 
 .home {
     height: 100vh;
@@ -169,7 +165,7 @@ body {
     margin-left: 100px;
 }
 
-.home-content h1 {
+.home-content h3 {
     margin-top: 0;
 }
 
@@ -223,7 +219,6 @@ body {
    
    
 }
-
 
 
 .about-info {
