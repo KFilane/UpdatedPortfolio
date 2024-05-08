@@ -47,11 +47,22 @@
     align-items: center;
 }
 
+
+
 .home-image {
     width: 500px;
     height: 500px;
     background: seagreen;
+    border-radius: 50%; /* Make the image container circular */
+    overflow: hidden; /* Ensure inner content is contained within the circle */
+    transition: transform 0.5s ease; /* Add transition for smooth movement */
+    transform: translateX(-200px); /* Initial position to slide to the right */
 }
+
+.home:hover .home-image {
+    transform: translateX(0); /* Move circle to the center on hover */
+}
+
 
 .home-content {
     max-width: 600px;
@@ -76,24 +87,20 @@
     margin-top: 20px;
 }
 
-.home-sci a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font-size: 20px;
-    color: aqua;
-    margin-top: 20px;
-    text-decoration: none;
-    
+.home-sci {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Align icons horizontally at the center */
+}
+
+.home-sci a {
+    margin: 0 10px; /* Adjust spacing between icons */
+    color: #987add; /* Change social icon color */
+    font-size: 24px;
 }
 
 .home-sci a:hover{
-    background: blue;
+    background: rgb(0, 0, 0);
     color: #fff;
 }
 
@@ -211,9 +218,9 @@ body {
 }
 
 .col {
-    width: 30%; /* Adjust the width as needed */
+    width: 35%; /* Adjust the width as needed */
     border-radius: 5px solid black;
-    padding: 10px;
+    padding: 20px;
     margin: 30px 20px;
     box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
    
@@ -237,9 +244,8 @@ body {
 /* Style for the skill boxes */
 
 .skills a i {
-    font-size: 105px; /* Adjust the font size as desired */
+    font-size: 114px; /* Adjust the font size as desired */
 }
-
 
 
 
