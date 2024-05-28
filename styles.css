@@ -274,7 +274,7 @@ body {
 
 
 .services {
-    background-color: #f8f9fa;
+    background-color: #000000;
     padding: 50px 0;
 }
 
@@ -367,7 +367,7 @@ p {
     left: 0;
     width: 100%;
     background-color: blueviolet(52, 152, 219, 0.8);
-    color: #fff;
+    color: #070707;
     padding: 15px;
     box-sizing: border-box;
     transition: 0.3s;
@@ -462,6 +462,7 @@ p {
 
 .footer {
     text-align: center; /* Center-align the content */
+    background-color: #070707;
 }
 
 .footer-content {
@@ -483,11 +484,12 @@ p {
 }
 
 .social-icon:hover {
-    color: #070707;
+    color: white;
 }
 
 .contact-info {
     text-align: right;
+    color: #f4f4f4;
 }
 
 .contact-info p {
