@@ -150,7 +150,12 @@
 
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <form action="submit_form.php" method="POST">
+        <form action="https://formsubmit.co/kamohelo2408@gmail.com" method="POST">
+            <!-- Hidden inputs for FormSubmit.co -->
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://kamohelofilaneportfolio.netlify.app/">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Your Email:</label>
